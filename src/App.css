@@ -1,0 +1,84 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.App > * {
+  flex: 1;
+  max-height: 50vh;
+}
+
+.traffic-light.green {
+  background-color: #2ecc71;
+}
+
+.traffic-light.yellow {
+  background-color: #fdcb6e;
+}
+
+.traffic-light.red {
+  background-color: #e74c3c;
+}
+
+.car-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+}
+
+.car-counter h1 {
+  font-size: 6rem;
+  color: #34495e;
+}
+
+.timer {
+  position: fixed;
+  height: 10vh;
+  top: 45vh;
+  left: 25vw;
+  width: 50vw;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px #e5e5e5;
+}
+
+.timer .time {
+  font-size: 8vw;
+  color: #34495e;
+}
+
+.action-button {
+  position: fixed;
+  top: 47.5vh;
+  border: none;
+  background: white;
+  color: #34495e;
+  text-transform: uppercase;
+  height: 5vh;
+  width: 20vw;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px #e5e5e5;
+}
+
+.copy-to-clipboard {
+  right: 2.5vw;
+}
+
+.reset {
+  left: 2.5vw;
+}
+
+.action-button:active {
+  background: rgba(0, 0, 0, 0.5);
+}
